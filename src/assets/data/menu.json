@@ -1,0 +1,20 @@
+[ 
+    {
+        "nombre": "Nutricion",
+        "redirect": "/tablero"
+    },
+    {
+        
+        "nombre": "Integrante",
+        "redirect": "/tablero/usuario"
+
+    },
+    {
+        
+        "nombre": "Producto",
+        "redirect": "/tablero/reportes"
+
+    }
+    
+
+]
