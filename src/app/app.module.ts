@@ -10,6 +10,8 @@ import { CompartirModuloModule } from './component/compartModulos/compartir-modu
 import { AppComponent } from './app.component';
 import { LoginComponent } from './component/login/login.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RegistroComponent } from './component/registro/registro.component';
+import { PagNoEncontardaComponent } from './component/pag-no-encontarda/pag-no-encontarda.component';
 
 
 
@@ -21,6 +23,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     LoginComponent,
+    RegistroComponent,
+    PagNoEncontardaComponent,
  
 
   ],

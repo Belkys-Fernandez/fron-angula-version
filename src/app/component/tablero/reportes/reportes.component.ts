@@ -58,6 +58,19 @@ export class ReportesComponent implements OnInit {
 
     })
   }
+  modificarProducto(index:number){
+    console.log(index);
+    this._productoService.modificarProducto(index);
+    this.cargarproducto();
+
+    this._snackBar.open('El producto fue ELIMINADO  con exito','',  {
+      duration:2000,
+      horizontalPosition:'center',
+      verticalPosition:'top'
+
+    })
+  }
+
 
 
 

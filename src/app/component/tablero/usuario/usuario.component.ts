@@ -22,7 +22,7 @@ export class UsuarioComponent implements OnInit {
 
 
 
-  displayedColumns: string[] = ['usuario', 'nombre', 'apellido', 'sexo' ,'acciones'];
+  displayedColumns: string[] = ['usuario', 'nombre', 'apellido', 'cuenta' ,'acciones'];
  
   dataSource! :MatTableDataSource<any>;
 

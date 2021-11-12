@@ -30,6 +30,9 @@ getProducto(){
 eliminarProducto(index:number){
   this.listproducto.splice(index ,1);
 }
+modificarProducto(index:number){
+  this.listproducto.splice(index ,1);
+}
 agreggarProducto(producto:producto){
   this.listproducto.unshift(producto);
 }

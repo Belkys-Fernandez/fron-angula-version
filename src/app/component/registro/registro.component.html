@@ -1,0 +1,52 @@
+<div class="body">
+    <div class="Login">
+     <mat-spinner    diameter ="50"></mat-spinner>
+
+        <form  [formGroup]="formularioRegistro" (ngSubmit)="CrearUsuario()" > 
+           <img src="./assets/img/usuario.png " width="15%">
+           <h1>Registrate ya</h1>
+
+           <mat-form-field  class="ancho" appearance="fill"><i [ngClass]="{'validado bi-x-circle-fill': formularioRegistro.get('usuario')?.hasError('required'), 'error bi bi-check-circle-fill iconos' : !formularioRegistro.get('usuario')?.hasError('required')}" id="iconoNombre"></i>
+            <mat-label>usuario</mat-label>
+            <input matInput autocomplete="off"  formControlName="nombre" name="usuario" id="usuario">
+          </mat-form-field>
+
+           <mat-form-field  class="ancho" appearance="fill"><i [ngClass]="{'validado bi-x-circle-fill': formularioRegistro.get('nombre')?.hasError('required'), 'error bi bi-check-circle-fill iconos' : !formularioRegistro.get('nombre')?.hasError('required')}"></i>
+               <mat-label>Nombre</mat-label>
+               <input matInput autocomplete="off"  formControlName="nombre" name="nombre" id="nombre">
+             </mat-form-field>
+
+             <mat-form-field  class="ancho" appearance="fill"><i [ngClass]="{'validado bi-x-circle-fill': formularioRegistro.get('nombre')?.hasError('required'), 'error bi bi-check-circle-fill iconos' : !formularioRegistro.get('nombre')?.hasError('required')}"></i>
+              <mat-label>Apellido</mat-label>
+              <input matInput autocomplete="off"  formControlName="apellido" name="apellido" id="apellido">
+            </mat-form-field>
+
+            <mat-form-field  class="ancho" appearance="fill"><i [ngClass]="{'validado bi-x-circle-fill': formularioRegistro.get('nombre')?.hasError('required'), 'error bi bi-check-circle-fill iconos' : !formularioRegistro.get('nombre')?.hasError('required')}"></i>
+              <mat-label>cuenta</mat-label>
+              <input matInput autocomplete="off"  formControlName="cuenta" name="cuenta" id="cuenta">
+            </mat-form-field>
+
+
+            
+             <mat-form-field  class="ancho"  appearance="fill" >
+               <mat-label>Contraseña </mat-label><i [ngClass]="{'validado bi-x-circle-fill': formularioRegistro.get('password')?.hasError('required'), 'error bi bi-check-circle-fill iconos' : !formularioRegistro.get('password')?.hasError('required')}" ></i>
+               <input  type="password"  matInput  autocomplete="off" formControlName="password" name="password" id="password" >
+             </mat-form-field>
+
+
+             <br>
+             <button   type="submit"   class="ancho button"  mat-raised-button color="primary"  >Regristrarse</button>
+             <br>
+             <br>
+             <button   (click)=atras() value="atras" class="ancho button"  mat-raised-button color="primary"  >Ir al Login</button>
+             
+           
+
+        </form>
+     
+    </div>
+ 
+
+</div>
+
+

@@ -1,10 +1,9 @@
-
-
 export interface Usuario{
     usuario: string,
     nombre:string,
     apellido: string,
-    sexo:string,
+    cuenta:string,
+    password:string,
 
 
 

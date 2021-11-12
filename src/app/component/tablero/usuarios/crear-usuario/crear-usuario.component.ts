@@ -12,7 +12,7 @@ import { UsuarioService } from 'src/app/service/usuarios.service';
   styleUrls: ['./crear-usuario.component.css']
 })
 export class CrearUsuarioComponent implements OnInit {
- sexo:any[]=['Cliente Admirable', 'Empresario']
+ cuenta:any[]=['Cliente Admirable', 'Empresario']
  
  form: FormGroup;
 
@@ -23,7 +23,9 @@ export class CrearUsuarioComponent implements OnInit {
       usuario:['', Validators.required],
       nombre:['', Validators.required],
       apellido:['', Validators.required],
-      sexo:['', Validators.required],
+      cuenta:['', Validators.required],
+      password:['',Validators.required]
+      
     })
    }
 
@@ -36,7 +38,8 @@ export class CrearUsuarioComponent implements OnInit {
       usuario:this.form.value.usuario,
       nombre:this.form.value.nombre,
       apellido:this.form.value.apellido,
-      sexo:this.form.value.sexo,
+      cuenta:this.form.value.cuenta,
+      password:this.form.value.password
     }
   
     this._usuarioService.agregarUsuario(user);

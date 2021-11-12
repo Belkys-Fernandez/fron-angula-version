@@ -7,7 +7,7 @@ import { Usuario } from '../interfaces/usuario';
 export class UsuarioService {
   listUsuario: Usuario[] = [
 
-    {usuario: "Jfernandez" , nombre: 'Flor', apellido: "Fernandez", sexo: 'F'}
+    {usuario: "Jfernandez" , nombre: 'Flor', apellido: "Fernandez", cuenta: 'F' ,password:'123'}
   ];
 
 
